@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-name: Your New Jekyll Site
-pygments: true
-=======
 auto: true
 pygments: true
 
@@ -17,4 +13,3 @@ author:
     github: rozifus
     twitter: RyanMillerApps
 
->>>>>>> master
