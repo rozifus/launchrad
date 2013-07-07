@@ -1,2 +1,20 @@
+<<<<<<< HEAD
 name: Your New Jekyll Site
 pygments: true
+=======
+auto: true
+pygments: true
+
+title: Launchrad!
+
+url: http://rozifus.github.io/launchrad
+
+permalink: /:categories/:title
+
+author:
+    name: Ryan Miller
+    email: rozifus@gmail.com
+    github: rozifus
+    twitter: RyanMillerApps
+
+>>>>>>> master
