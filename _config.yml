@@ -1,0 +1,15 @@
+auto: true
+pygments: true
+
+title: Launchrad!
+
+url: http://www.launchrad.com
+
+permalink: /:categories/:title
+
+author:
+    name: Ryan Miller
+    email: rozifus@gmail.com
+    github: rozifus
+    twitter: RyanMillerApps
+
