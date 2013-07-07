@@ -3,7 +3,7 @@ pygments: true
 
 title: Launchrad!
 
-url: http://www.launchrad.com
+url: http://rozifus.github.io/launchrad
 
 permalink: /:categories/:title
 
