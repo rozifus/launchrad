@@ -1,9 +1,9 @@
 auto: true
 pygments: true
 
-title: Launchrad!
+title: rozifus
 
-url: http://rozifus.github.io/launchrad
+url: http://www.rozifus.com
 
 permalink: /:categories/:title
 
