@@ -1,13 +1,46 @@
 ---
 layout: layout
-title: Launchrad - Where Ryan Miller's Projects Take Off!
+title: Rozifus.com - The Home of Ryan Miller's Dev
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+    <div class="row">
+        <div class="span12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="span6">
+            <div class="row">
+                <div class="span12">
+                    <h2 class="title">Apps</h2>
+                    <ul class="posts unstyled app-list">
+                        {% for post in site.posts %}
+                            {% if post.categories contains 'apps' %}
+                            <li>
+                                <a href="{{ post.url }}"><img class="app-icon" src="{{ site.url }}/img/apps/{{ post.appid }}/icon-57.png"></img></a>
+                                &nbsp;
+                                <a href="{{ post.url }}"><span class="app-list">{{ post.title }}</span></a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="span6">
+            <div class="row">
+                <div class="span12">
+                    <h2 class="title">About Me</h2>
+                    <p>Lotsa Stuff</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="app-title">Contact</h2>
+                    <p>La di da</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

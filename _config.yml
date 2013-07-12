@@ -1,9 +1,9 @@
 auto: true
 pygments: true
 
-title: Rozifus
+title: Rozifus Dev
 
-url: http://www.rozifus.com
+url: http://localhost:4000
 
 permalink: /:categories/:title
 

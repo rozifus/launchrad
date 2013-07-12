@@ -1,5 +1,5 @@
 
-.app-icon { 
+div.app-icon { 
     padding-top: 2em;
     display: block;
     width: 100%;
@@ -13,6 +13,34 @@ h1.app-title {
 
 }
 
-.app-icon img {
+hr {
+    padding-top: 2em;
+}
+
+h2.title {
+    padding-bottom: 0.1em;
+}
+
+.app-store-link {
+    padding-left: 0.5em;
+    padding-bottom: 0.8em;
+}
+
+.label-big {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+img.app-icon {
     border-radius: 17.554%
+}
+
+span.app-list {
+    font-size: 1.4em;
+}
+
+.app-list a:hover {
+    text-decoration: none;
 }
