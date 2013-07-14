@@ -55,13 +55,14 @@ layout: layout
                 </div>
 
                 {% if page.screenshots %}
-                <div class="span12">
-                    <h4>Screenshots:</h4>
+                <div class="span6">
+                    <h4>Screens:</h4>
                     <ul id="screenshots" class="elastislide-list">
                         {% for screen in page.screenshots %}
                         <li><a href="#"><img src="{{ site.url }}/img/apps/{{ page.appid }}/{{ screen }}" alt="app screenshot" /></a></li>
                         {% endfor %}
                     </ul>
+                    <br /><br />
                 </div>
                 {% endif %}
 
@@ -96,6 +97,7 @@ layout: layout
     </div>
 </div>
 <script type="text/javascript">
+    $.Elastislide.defaults.minItems = 4;
     $( '#screenshots' ).elastislide();
 </script>
 
