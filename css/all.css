@@ -5,3 +5,4 @@
 {% include css/launchrad.css %}
 {% include css/bootstrap/bootstrap-responsive.min.css %}
 {% include js/bootstrap/google-code-prettify/prettify.css %}
+{% include vendor/elastislide/elastislide.css %}

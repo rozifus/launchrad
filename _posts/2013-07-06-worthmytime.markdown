@@ -7,6 +7,8 @@ categories: apps
 appid: worthmytime
 store:
     ios: http://itunes.apple.com/us/app/worth-my-time/id668421500
+
+screenshots: [ip35_1.png, ip35_2.png]
 ---
 
 Find out how long you need to work to pay for meals, clothes, holidays, anything!  

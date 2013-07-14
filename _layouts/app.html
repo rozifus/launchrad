@@ -1,7 +1,6 @@
 ---
 layout: layout
 ---
-
 <div class="app-content">
     <div class="row">
          <div class="span3">
@@ -55,9 +54,19 @@ layout: layout
                     </ul>
                 </div>
 
+                {% if page.screenshots %}
+                <div class="span12">
+                    <h4>Screenshots:</h4>
+                    <ul id="screenshots" class="elastislide-list">
+                        {% for screen in page.screenshots %}
+                        <li><a href="#"><img src="{{ site.url }}/img/apps/{{ post.appid }}/{{ screen }}" alt="app screenshot" /></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
 
                 <div class="span12">
-                    <h4>Feedback - Bugs, Feature Requests, Comments:</h4>
+                    <h4>Feedback:</h4>
                     <ul class="unstyled">
                         <li><a href="mailto:{{ site.author.email }}">
                             <img src="/img/mail.png"><img> 
@@ -75,8 +84,7 @@ layout: layout
             </div>
          </div>
     </div>
-    
-    <div class="row">	
+    <div class="row">
         <div class="span8 column">
             <p>
               <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
@@ -86,6 +94,8 @@ layout: layout
             </p>
         </div>
     </div>
-
 </div>
-    
+<script type="text/javascript">
+    $( '#screenshots' ).elastislide();
+</script>
+
