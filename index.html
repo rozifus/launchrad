@@ -4,11 +4,12 @@ title: Rozifus.com - The Home of Ryan Miller's Dev
 ---
 
 <div id="home">
-    <div class="row">
+    <!--<div class="row">
         <div class="span12">
             <hr />
         </div>
-    </div>
+    </div>-->
+    <br />
     <div class="row">
         <div class="span6">
             <div class="row">
@@ -29,15 +30,31 @@ title: Rozifus.com - The Home of Ryan Miller's Dev
         </div>
         <div class="span6">
             <div class="row">
-                <div class="span12">
+                <div class="span6">
                     <h2 class="title">About Me</h2>
-                    <p>Lotsa Stuff</p>
+                    <p>
+                        <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" class="img-rounded floatLeft" />
+                        I'm Ryan Miller - an independent developer who's currently focused on building apps using sencha touch.
+                    <p>
+                    <br />
+                    <br />
                 </div>
             </div>
             <div class="row">
-                <div class="span12">
+                <div class="span6">
                     <h2 class="app-title">Contact</h2>
-                    <p>La di da</p>
+                    <ul class="unstyled">
+                        <li><a href="mailto:{{ site.author.email }}">
+                            <img src="/img/mail.png"><img> 
+                            &nbsp;
+                            {{ site.author.email }}
+                        </a></li>
+                        <li><a href="http://www.twitter.com/{{ site.author.twitter }}" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank">
+                            <img src="/img/twitter.png"></img>
+                            &nbsp;
+                            @{{ site.author.twitter }}
+                        </a></li>
+                    </ul>
                 </div>
             </div>
         </div>

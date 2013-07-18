@@ -7,9 +7,10 @@ url: http://www.rozifus.com
 
 permalink: /:categories/:title
 
-author:
+app-author:
     name: Ryan Miller
     email: rozifus@gmail.com
     github: rozifus
     twitter: rozifus
+    gravatar: http://www.gravatar.com/avatar/7ee73ed44153d21b1167f560545e094d.png
 
