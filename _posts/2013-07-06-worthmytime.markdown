@@ -8,7 +8,7 @@ spiel: Find out how long you need to work to pay for meals, clothes, holidays, a
 appid: worthmytime
 store:
     ios: http://itunes.apple.com/us/app/worth-my-time/id668421500
-    android: http://play.google.com/store/apps/details?id=<package_name>
+    android: http://play.google.com/store/apps/details?id=com.rozifus.worthmytime
 
 preview: [ ip35_1_thumb.png, ip35_2_thumb.png ]
 ---
