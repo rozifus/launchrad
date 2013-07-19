@@ -1,11 +1,11 @@
 ---
 layout: app
+appid: worthmytime
 title:  "Worth My Time?"
 date:   2013-07-06 16:32:59
 categories: apps
-spiel: Find out how long you need to work to pay for meals, clothes, holidays, anything! <br /> Become the zen-master of all your spending
+spiel: Find out how long you need to work to pay for meals, clothes, holidays, anything! <br /> Become the zen-master of all your spending.
 
-appid: worthmytime
 store:
     ios: http://itunes.apple.com/us/app/worth-my-time/id668421500
     android: http://play.google.com/store/apps/details?id=com.rozifus.worthmytime
