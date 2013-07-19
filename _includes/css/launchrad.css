@@ -20,7 +20,7 @@ h2.title {
     padding-bottom: 0.1em;
 }
 
-.app-store-link span {
+.app-store-link a {
     padding: 0.3em;
     padding-left: 0.5em;
     padding-bottom: 0.4em;
