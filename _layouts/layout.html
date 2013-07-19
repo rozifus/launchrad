@@ -13,17 +13,16 @@
       <meta content="{{ page.title }}" property="og:title">
       <meta content="article" property="og:type">
       <meta content="{{ page.spiel }}" property="og:description">
-      <meta content="{{ site.url }}/img/apps/{{ page.appid }}/icon-round-512.png" property="og:image">
+      <meta content="{{ site.url }}/img/apps/{{ page.appid }}/icon-round-512.png" property="og:image/png">
+      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     {% else %}
       <meta content="{{ site.title }}" property="og:title">
       <meta content="website" property="og:type">
       <meta content="{{ site.description }}" property="og:description">
-      <meta content="{{ site.url }}/img/me.png" property="og:image">
-    {% endif %}
-
-    {% if page.date %}
+      <meta content="{{ site.url }}/img/me.png" property="og:image/jpeg">
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     {% endif %}
+
     <!-- End Open Graph -->
     <link href="{{ site.url }}/css/all.css" rel="stylesheet">
     <script src="{{ site.url }}/js/all.js" type="text/javascript"></script>
