@@ -16,6 +16,10 @@ h1.app-title {
 
 }
 
+ul.social li {
+    padding-bottom: 0.4em;
+}
+
 hr {
     padding-top: 2em;
 }
