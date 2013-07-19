@@ -31,24 +31,22 @@ layout: layout
                     <h4>Share:</h4>
                     <div class="fb-send" data-href="{{ site.url }}/apps/{{ page.appid }}" data-font="verdana"></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="span3">
+                <div class="span9">
                     <h4>Download:</h4>
                     <ul class="unstyled">
                         {% if page.store.ios %}
                         <li class='app-store-link'>
                             <a href="{{ page.store.ios }}" target="itunes_store">
-                            <img alt="Available on Apple App Store" 
-                                 src="{{ site.url }}/img/app-store-badge.png" />
+                                <span class="btn btn-ios"></span>
                             </a>
                         </li>
                         {% endif %}
                         {% if page.store.android %}
                         <li class="app-store-link">
                             <a href="{{ page.store.android }}" target="_blank">
-                            <img alt="Android App on Google Play" 
+                            <img alt="Android app on Google Play" 
                                  src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                            Android Device
                             </a>
                         </li>
                         {% endif %}
@@ -69,6 +67,8 @@ layout: layout
                         {% endif %}
                     </ul>
                 </div>
+            </div>
+            <div class="row">
                 <div class="span9">
                     <div class="row">
                         <div class="span12">
