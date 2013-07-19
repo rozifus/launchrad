@@ -29,8 +29,8 @@ h2.title {
     line-height: 1.2em;
 }
 
-span {
-    color: blue !important;
+.app-store-link span {
+    color: grey;
 }
 
 img.app-icon {
