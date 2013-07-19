@@ -36,9 +36,12 @@ layout: layout
                         </a></li>
                         {% endif %}
                         {% if page.store.android %}
-                        <li class="app-store-link"><a href="{{ page.store.android }}" target="_blank">
-                            <span class='label label-big label-success'>Android</span>
-                        </a></li>
+                        <li class="app-store-link">
+                            <a href="{{ page.store.android }}" target="_blank">
+                            <img alt="Android app on Google Play" 
+                                 src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                            </a>
+                        </li>
                         {% endif %}
                         {% if page.store.blackberry %}
                         <li class="app-store-link"><a href="{{ page.store.blackberry }}" target="_blank">

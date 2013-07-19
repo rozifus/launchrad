@@ -10,7 +10,7 @@ store:
     ios: http://itunes.apple.com/us/app/worth-my-time/id668421500
     android: http://play.google.com/store/apps/details?id=com.rozifus.worthmytime
 
-preview: [ ip35_1_thumb.png, ip35_2_thumb.png ]
+preview: [ ip35_1_thumb.png, ip35_2_thumb.png, ip35_3_thumb.png ]
 ---
 
 #### Features:
