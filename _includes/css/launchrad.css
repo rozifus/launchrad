@@ -2,12 +2,19 @@ a:hover {
     text-decoration: none;
 }
 
-div.app-icon { 
+div.app-icon {
+    position: relative;
+    text-align: center;
     padding-top: 2em;
-    display: block;
     width: 100%;
-    height: 100%;
+    height: 180px;
     margin: auto;
+}
+
+div.app-icon img {
+    display: block;
+    margin: auto;
+    position: absolute;
 }
 
 h1.app-title {
