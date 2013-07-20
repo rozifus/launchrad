@@ -90,10 +90,14 @@ layout: layout
                             <h4>Share:</h4>
                             <ul class="unstyled social">
                                 <li>
-                                    <div class="fb-send" data-href="{{ site.url }}/apps/{{ page.appid }}" data-font="verdana"></div>
+                                    <div class="fb-like"
+                                         data-href="{{ site.url }}/apps/{{ page.appid }}"
+                                         data-send="true" data-layout="button_count"
+                                         data-width="400" data-show-faces="false">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="g-plusone"></div>
+                                    <div class="g-plusone" data-size="medium"></div>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.twitter }}">Tweet</a>
@@ -106,7 +110,7 @@ layout: layout
                             <h4>Feedback:</h4>
                             <ul class="unstyled">
                                 <li><a href="mailto:{{ site.author.email }}">
-                                    <img src="/img/mail.png"><img> 
+                                    <img src="/img/mail.png"></img>
                                     &nbsp;
                                     {{ site.author.email }}
                                 </a></li>
@@ -131,8 +135,20 @@ layout: layout
         </div>
     </div>
 </div>
+<!-- Elastislide -->
 <script type="text/javascript">
     $.Elastislide.defaults.minItems = 4;
     $( '#screenshots' ).elastislide();
+</script>
+<div id="fb-root"></div>
+<script type="text/javascript">
+        window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '{{ page.facebook-app-id }}',         // App ID from the app dashboard
+          status     : true,                                 // Check Facebook Login status
+          xfbml      : true                                  // Look for social plugins on the page
+        });
+        };
 </script>
 
