@@ -5,12 +5,14 @@ layout: layout
     <div class="row">
         <div class="span12">
             <div class="row">
-                <div class="span4">
+                <div class="span3">
                     <div class="app-icon">
-                        <img class="app-icon" src="{{ site.url }}/img/apps/{{ page.appid }}/icon-170.png">
+                        <div calss="app-icon-sub">
+                            <img class="app-icon" src="{{ site.url }}/img/apps/{{ page.appid }}/icon-170.png">
+                        </div>
                     </div>
                 </div>
-                <div class="span8">
+                <div class="span9">
                     <div class="row">
                         <div class="span9">
                             <br />
@@ -27,8 +29,8 @@ layout: layout
     <div class="row">
         <div class="span12">
             <div class="row">
-                <div class="span4">
-                    <h4>Get the App:</h4>
+                <div class="span3">
+                    <br /><br />
                     <ul class="unstyled">
                         {% if page.store.ios %}
                         <li class='app-store-link'>
