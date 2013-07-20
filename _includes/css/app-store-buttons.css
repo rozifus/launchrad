@@ -29,6 +29,7 @@
 .app-store-button em {
     font-size: 10px;
     font-weight: bold;
+    line-height: 5px;
     display: block;
     color: #fff;
     text-shadow: 0px 1px rgba(255, 255, 255, 0.65);
