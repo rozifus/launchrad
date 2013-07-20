@@ -69,57 +69,8 @@ span.app-list {
 }
 
 
-
-
-
-.btn-ios {
-	color: #FFFFFF;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #0F0F0F;
-	*background-color: #0F0F0F;
-	background-image: -moz-linear-gradient(top, #525252, #0F0F0F);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#525252), to(#0F0F0F));
-	background-image: -webkit-linear-gradient(top, #525252, #0F0F0F);
-	background-image: -o-linear-gradient(top, #525252, #0F0F0F);
-	background-image: linear-gradient(to bottom, #525252, #0F0F0F);
-	background-repeat: repeat-x;
-	border-color: #0F0F0F;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#525252', endColorstr='#0F0F0F', GradientType=0);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.btn-ios:hover,
-.btn-ios:active,
-.btn-ios.active,
-.btn-ios.disabled,
-.btn-ios[disabled] {
-	color: #FFFFFF;
-	background-color: #0F0F0F;
-	*background-color: #003bb3;
+.elastislide-wrapper {
+    padding-top: 1em;
 }
 
-.btn-android {
-	color: #FFFFFF;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #1E4713;
-	*background-color: #1E4713;
-	background-image: -moz-linear-gradient(top, #127A23, #1E4713);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#127A23), to(#1E4713));
-	background-image: -webkit-linear-gradient(top, #127A23, #1E4713);
-	background-image: -o-linear-gradient(top, #127A23, #1E4713);
-	background-image: linear-gradient(to bottom, #127A23, #1E4713);
-	background-repeat: repeat-x;
-	border-color: #1E4713;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#127A23', endColorstr='#1E4713', GradientType=0);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.btn-android:hover,
-.btn-android:active,
-.btn-android.active,
-.btn-android.disabled,
-.btn-android[disabled] {
-	color: #FFFFFF;
-	background-color: #1E4713;
-	*background-color: #003bb3;
-}
+

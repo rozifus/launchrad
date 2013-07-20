@@ -12,12 +12,38 @@ layout: layout
                 </div>
                 <div class="span8">
                     <div class="row">
-                        <div class="span9">
+                        <div class="span8">
                             <br />
                             <h1 class="app-title">{{ page.title }}</h1>
                         </div>
-                        <div class="span9">
+                        <div class="span8">
                             <p>{{ page.spiel }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="span12">
+            <div class="row">
+                <div class="span4">
+                    {% if page.preview %}
+                    <div class="left-row-size">
+                        <ul id="screenshots" class="elastislide-list">
+                            {% for screen in page.preview %}
+                            <li><a href="#"><img src="{{ site.url }}/img/apps/{{ page.appid }}/{{ screen }}" alt="app screenshot" /></a></li>
+                            {% endfor %}
+                        </ul>
+                        <br /><br />
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="span8">
+                    <div class="row">
+                        <div class="span8">
+                            {{ content }}
                         </div>
                     </div>
                 </div>
@@ -27,7 +53,7 @@ layout: layout
     <div class="row">
         <div class="span12">
             <div class="row">
-                <div class="span4">
+                <div class="span8">
                     <div class="left-row-size">
                         <br /><br />
                         <ul class="unstyled">
@@ -65,18 +91,6 @@ layout: layout
                         </ul>
                     </div>
                 </div>
-                <div class="span8">
-                    {% if page.preview %}
-                        <h4>Preview:</h4>
-                        <ul id="screenshots" class="elastislide-list">
-                            {% for screen in page.preview %}
-                            <li><a href="#"><img src="{{ site.url }}/img/apps/{{ page.appid }}/{{ screen }}" alt="app screenshot" /></a></li>
-                            {% endfor %}
-                        </ul>
-                        <br /><br />
-                    </div>
-                    {% endif %}
-                </div>
             </div>
         </div>
     </div>
@@ -94,14 +108,7 @@ layout: layout
                         <li>
                     </ul>
                 </div>
-                <div class="span9">
-                    <div class="row">
-                        <div class="span12">
-                            {{ content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </div>
         </div>
     </div>
     <div class="row">
