@@ -47,90 +47,73 @@ layout: layout
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span12">
-            <div class="row">
                 <div class="span8">
-                    <div class="left-row-size">
-                        <br /><br />
-                        <ul class="unstyled">
-                            {% if page.store.ios %}
-                            <li class='app-store-link'>
-                                <a class="app-store-button ios" href="{{ page.store.ios }}" target="itunes_store">
-                                    <span class="icon"></span>
-                                    <em>Download now for</em><span>iPhone / iPad</span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if page.store.android %}
-                            <li class="app-store-link">
-                                <a class="app-store-button android" href="{{ page.store.android }}" target="_blank">
-                                    <span class="icon"></span>
-                                    <em>Download now for</em><span>Android</span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if page.store.blackberry %}
-                            <li class="app-store-link"><a href="{{ page.store.blackberry }}" target="_blank">
-                                <span class='label label-important'>BlackBerry<span>
-                            </a></li>
-                            {% endif %}
-                            {% if page.store.windows %}
-                            <li class="app-store-link"><a href="{{ page.store.windows }}" target="_blank">
-                                <span class='label label-info'>Windows Mobile</span>
-                            </a></li>
-                            {% endif %}
-                            {% if page.store.mac %}
-                            <li class="app-store-link"><a href="{{ page.store.mac }}" target="_blank">
-                                <span class='label'>Mac</span>
-                            </a></li>
-                            {% endif %}
-                        </ul>
+                    <div class="row">
+                        <div class="span3">
+                            <h4>Get the App:</h4>
+                            <ul class="unstyled">
+                                {% if page.store.ios %}
+                                <li class='app-store-link'>
+                                    <a class="app-store-button ios" href="{{ page.store.ios }}" target="itunes_store">
+                                        <span class="icon"></span>
+                                        <em>Download now for</em><span>iPhone / iPad</span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if page.store.android %}
+                                <li class="app-store-link">
+                                    <a class="app-store-button android" href="{{ page.store.android }}" target="_blank">
+                                        <span class="icon"></span>
+                                        <em>Download now for</em><span>Android</span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if page.store.blackberry %}
+                                <li class="app-store-link"><a href="{{ page.store.blackberry }}" target="_blank">
+                                    <span class='label label-important'>BlackBerry<span>
+                                </a></li>
+                                {% endif %}
+                                {% if page.store.windows %}
+                                <li class="app-store-link"><a href="{{ page.store.windows }}" target="_blank">
+                                    <span class='label label-info'>Windows Mobile</span>
+                                </a></li>
+                                {% endif %}
+                                {% if page.store.mac %}
+                                <li class="app-store-link"><a href="{{ page.store.mac }}" target="_blank">
+                                    <span class='label'>Mac</span>
+                                </a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <div class="span3">
+                            <h4>Share:</h4>
+                            <ul class="unstyled social">
+                                <li>
+                                    <div class="fb-send" data-href="{{ site.url }}/apps/{{ page.appid }}" data-font="verdana"></div>
+                                </li>
+                                <li>
+                                    <div class="g-plusone"></div>
+                                <li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span12">
-            <div class="row">
-                <div class="span3">
-                    <h4>Share:</h4>
-                    <ul class="unstyled social">
-                        <li>
-                            <div class="fb-send" data-href="{{ site.url }}/apps/{{ page.appid }}" data-font="verdana"></div>
-                        </li>
-                        <li>
-                            <div class="g-plusone"></div>
-                        <li>
-                    </ul>
-                </div>
-                            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span12">
-            <div class="row">
-                <div class="span3">
-                    &nbsp;
-                </div>
-                <div class="span9">
-                    <h4>Feedback:</h4>
-                    <ul class="unstyled">
-                        <li><a href="mailto:{{ site.author.email }}">
-                            <img src="/img/mail.png"><img> 
-                            &nbsp;
-                            {{ site.author.email }}
-                        </a></li>
-                        <li><a href="http://www.twitter.com/{{ site.author.twitter }}" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank">
-                            <img src="/img/twitter.png"></img>
-                            &nbsp;
-                            @{{ site.author.twitter }}
-                        </a></li>
-                    </ul>
+                    <div class="row">
+                        <div class="span4">
+                            <h4>Feedback:</h4>
+                            <ul class="unstyled">
+                                <li><a href="mailto:{{ site.author.email }}">
+                                    <img src="/img/mail.png"><img> 
+                                    &nbsp;
+                                    {{ site.author.email }}
+                                </a></li>
+                                <li><a href="http://www.twitter.com/{{ site.author.twitter }}" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank">
+                                    <img src="/img/twitter.png"></img>
+                                    &nbsp;
+                                    @{{ site.author.twitter }}
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
          </div>
