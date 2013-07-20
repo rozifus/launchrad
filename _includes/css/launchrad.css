@@ -17,6 +17,7 @@ div.app-icon {
 div.left-row-size {
     width: 220px;
     margin: auto;
+    margin-top: 1em;
 }
 
 div.app-icon img {
