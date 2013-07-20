@@ -43,7 +43,7 @@ layout: layout
                     <ul class="unstyled">
                         {% if page.store.ios %}
                         <li class='app-store-link'>
-                            <a class="app-store-button apple" href="{{ page.store.ios }}" target="itunes_store">
+                            <a class="app-store-button ios" href="{{ page.store.ios }}" target="itunes_store">
                                 <span class="icon"></span>
                                 <em>Download now for</em><span>iPhone / iPad</span>
                             </a>
@@ -51,8 +51,9 @@ layout: layout
                         {% endif %}
                         {% if page.store.android %}
                         <li class="app-store-link">
-                            <a class="btn btn-large btn-android" href="{{ page.store.android }}" target="_blank">
-                                Android
+                            <a class="app-store-button android" href="{{ page.store.android }}" target="_blank">
+                                <span class="icon"></span>
+                                <em>Download now for</em><span>Android</span>
                             </a>
                         </li>
                         {% endif %}
