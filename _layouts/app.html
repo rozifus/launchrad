@@ -24,7 +24,6 @@ layout: layout
             </div>
         </div>
     </div>
-    <hr />
     <div class="row">
         <div class="span12">
             <div class="row">
@@ -64,8 +63,8 @@ layout: layout
                         {% endif %}
                     </ul>
                 </div>
-                {% if page.preview %}
-                    <div class="span6">
+                <div class="span6">
+                    {% if page.preview %}
                         <h4>Preview:</h4>
                         <ul id="screenshots" class="elastislide-list">
                             {% for screen in page.preview %}
@@ -74,18 +73,14 @@ layout: layout
                         </ul>
                         <br /><br />
                     </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
             <div class="row">
-                <div class="span9">
-                    <div class="row">
-                        <div class="span12">
-                            {{ content }}
-                        </div>
-                    </div>
-                </div>
-
                 <div class="span3">
                     <h4>Share:</h4>
                     <ul class="unstyled social">
@@ -97,24 +92,36 @@ layout: layout
                         <li>
                     </ul>
                 </div>
-
+                <div class="span9">
                     <div class="row">
-                        <div class="span9">
-                            <h4>Feedback:</h4>
-                            <ul class="unstyled">
-                                <li><a href="mailto:{{ site.author.email }}">
-                                    <img src="/img/mail.png"><img> 
-                                    &nbsp;
-                                    {{ site.author.email }}
-                                </a></li>
-                                <li><a href="http://www.twitter.com/{{ site.author.twitter }}" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank">
-                                    <img src="/img/twitter.png"></img>
-                                    &nbsp;
-                                    @{{ site.author.twitter }}
-                                </a></li>
-                            </ul>
+                        <div class="span12">
+                            {{ content }}
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <div class="row">
+                <div class="span3">
+                    &nbsp;
+                </div>
+                <div class="span9">
+                    <h4>Feedback:</h4>
+                    <ul class="unstyled">
+                        <li><a href="mailto:{{ site.author.email }}">
+                            <img src="/img/mail.png"><img> 
+                            &nbsp;
+                            {{ site.author.email }}
+                        </a></li>
+                        <li><a href="http://www.twitter.com/{{ site.author.twitter }}" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank">
+                            <img src="/img/twitter.png"></img>
+                            &nbsp;
+                            @{{ site.author.twitter }}
+                        </a></li>
+                    </ul>
                 </div>
             </div>
          </div>
