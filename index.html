@@ -13,7 +13,7 @@ title: Rozifus.com - The Home of Ryan Miller's Dev
     <div class="row">
         <div class="span6">
             <div class="row">
-                <div class="span12">
+                <div class="span5">
                     <h2 class="title">Apps</h2>
                     <ul class="posts unstyled app-list">
                         {% for post in site.posts %}
@@ -21,7 +21,8 @@ title: Rozifus.com - The Home of Ryan Miller's Dev
                             <li>
                                 <a href="{{ post.url }}"><img class="app-icon" src="{{ site.url }}/img/apps/{{ post.appid }}/icon-57.png"></img></a>
                                 &nbsp;
-                                <a href="{{ post.url }}"><span class="app-list">{{ post.title }}</span></a></li>
+                                <a href="{{ post.url }}"><span class="app-list">{{ post.title }}</span></a>
+                            </li>
                             {% endif %}
                         {% endfor %}
                     </ul>
@@ -30,18 +31,18 @@ title: Rozifus.com - The Home of Ryan Miller's Dev
         </div>
         <div class="span6">
             <div class="row">
-                <div class="span6">
+                <div class="span5">
+                    <br />
                     <h2 class="title">About Me</h2>
                     <p>
                         <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" class="img-rounded floatLeft" />
                         I'm Ryan Miller - an independent developer who's current focus is mobile apps.
                     <p>
-                    <br />
-                    <br />
                 </div>
             </div>
             <div class="row">
                 <div class="span6">
+                    <br />
                     <h2 class="app-title">Contact</h2>
                     <ul class="unstyled">
                         <li><a href="mailto:{{ site.author.email }}">
