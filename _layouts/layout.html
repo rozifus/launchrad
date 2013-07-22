@@ -12,7 +12,11 @@
     {% if page.appid %}
       <meta content="{{ page.title }}" property="og:title">
       <meta content="article" property="og:type">
-      <meta content="{{ page.spiel }}" property="og:description">
+      {% if page.fb-spiel %}
+          <meta content="{{ page.fb-spiel }}" property="og:description">
+      {% else %}
+          <meta content="{{ page.spiel }}" property="og:description">
+      {% endif %}
       <meta content="{{ site.url }}/img/apps/{{ page.appid }}/icon-round-512.png" property="og:image">
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     {% else %}
