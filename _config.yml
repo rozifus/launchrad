@@ -9,6 +9,9 @@ canonical-url: http://rozifus.com
 
 permalink: /:categories/:title
 
+facebook:
+    admins: 100001084822957
+
 author:
     name: Ryan Miller
     email: rozifus@gmail.com

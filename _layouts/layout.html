@@ -8,11 +8,13 @@
     <meta name="author" content="Ryan Miller">
     <!-- Open Graph -->
     <meta content="{{ site.title }}" property="og:site_name">
+    <meta content="{{ site.facebook.admins }}" property="og:admin_id">
     {% if page.appid %}
       <meta content="{{ page.title }}" property="og:title">
-      <meta content="article" property="og:type">
-      {% if page.facebookspiel %}
-          <meta name="description" content="{{ page.facebookspiel }}" property="og:description">
+      <meta content="{{ page.facebook.app-id }}" property="og:app_id">
+      <meta content="website" property="og:type">
+      {% if page.facebook.spiel %}
+          <meta name="description" content="{{ page.facebook.spiel }}" property="og:description">
       {% else %}
           <meta name="description" content="{{ page.spiel }}" property="og:description">
       {% endif %}

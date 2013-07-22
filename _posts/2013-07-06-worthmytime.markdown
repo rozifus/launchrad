@@ -5,7 +5,10 @@ title:  "Worth My Time?"
 date:   2013-07-06 16:32:59
 categories: apps
 spiel: Find out how long you need to work to pay for meals, clothes, holidays, anything! <br /> Become the zen-master of all your spending.
-facebookspiel: Find out how long you need to work to pay for meals, clothes, holidays, anything! Become the zen-master of all your spending.
+
+facebook:
+    spiel: Find out how long you need to work to pay for meals, clothes, holidays, anything! Become the zen-master of all your spending.
+    app-id: 487468961334246
 
 store:
     ios: http://itunes.apple.com/us/app/worth-my-time/id668421500
