@@ -8,10 +8,10 @@
     <meta name="author" content="Ryan Miller">
     <!-- Open Graph -->
     <meta content="{{ site.title }}" property="og:site_name">
-    <meta content="{{ site.facebook.admins }}" property="og:admin_id">
+    <meta content="{{ site.facebook.admins }}" property="fb:admin_id">
     {% if page.appid %}
       <meta content="{{ page.title }}" property="og:title">
-      <meta content="{{ page.facebook.app-id }}" property="og:app_id">
+      <meta content="{{ page.facebook.app-id }}" property="fb:app_id">
       <meta content="website" property="og:type">
       {% if page.facebook.spiel %}
           <meta name="description" content="{{ page.facebook.spiel }}" property="og:description">
@@ -19,7 +19,6 @@
           <meta name="description" content="{{ page.spiel }}" property="og:description">
       {% endif %}
       <meta content="{{ site.url }}/img/apps/{{ page.appid }}/icon-round-512.png" property="og:image">
-      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     {% else %}
       <meta content="{{ site.canonical-url }}" property="og:url" />
       <meta content="{{ site.title }}" property="og:title">
